@@ -73,7 +73,7 @@ public class PongBall extends Entity {
 		
 		xvel = (int) Math.pow((-1),(int)(Math.random()*2));
 		yvel = (int) Math.pow((-1),(int)(Math.random()*2));
-		System.out.print("IN RESET");
+		//System.out.print("IN RESET");
 	}
 	
 	public void setXvel(int d)

@@ -9,8 +9,8 @@ public class PongPaddle extends Entity {
 
 	int toMove;
 	
-	public PongPaddle(int startx, int starty, int h) {
-		super(startx, starty, 1, h,"Paddle", Color.blue);
+	public PongPaddle(int startx, int starty, int h, Color c) {
+		super(startx, starty, 1, h,"Paddle", c);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -58,21 +58,19 @@ public class PongMain
 		ArrayList<Entity> ents = new ArrayList<Entity>();
 		
 		
-		LightsBuffer lb = new LightsBuffer(15,5);
+		LightsBuffer lb = new LightsBuffer(12,8);
 		
-		PongBall pb = new PongBall(7,1);
+		PongBall pb = new PongBall(6,4);
 		
-		PongPaddle p1 = new PongPaddle(1, 1, 2);
-		PongPaddle p2 = new PongPaddle(13, 2, 2);
+		PongPaddle p1 = new PongPaddle(1, 1, 2, Color.cyan);
+		PongPaddle p2 = new PongPaddle(10, 2, 2, Color.magenta);
 		
 		Wall top = new Wall(1, 0, lb.getWidth()-2, 1, false, Color.green);
 		Wall bottom = new Wall(1, lb.getHeight()-1, lb.getWidth()-2, 1, false,Color.green);
 		
 		
-		Wall left = new Wall(0, 0, 1,lb.getHeight() , true, Color.orange.darker());
-		Wall right = new Wall(lb.getWidth()-1, 0, 1, lb.getHeight(), true, Color.orange.darker());
-		
-		
+		Wall left = new Wall(0, 0, 1,lb.getHeight() , true, Color.green);
+		Wall right = new Wall(lb.getWidth()-1, 0, 1, lb.getHeight(), true, Color.green);
 		
 		ents.add(top);
 		ents.add(bottom);
@@ -95,7 +93,7 @@ public class PongMain
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				print(this.lb);
+				//print(this.lb);
 			}
 		};
 	}
