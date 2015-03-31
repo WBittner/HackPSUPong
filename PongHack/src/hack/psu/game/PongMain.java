@@ -18,7 +18,8 @@ public class PongMain
 	public static void main(String[] args)
 	{
 		init();
-		CommandCenter center=new CommandCenter(ge);
+		connector=new Connector();
+		CommandCenter center=new CommandCenter(ge,connector);
 		center.pack();
 		center.setVisible(true);
 		//center.pack();
@@ -48,7 +49,6 @@ public class PongMain
 	
 	public static boolean startConnector()
 	{
-		connector=new Connector();
 		connector.start();
 		return(true);//--------------------------YEP-------------------
 	}
